@@ -1,0 +1,357 @@
+.container {
+  min-height: 100vh;
+  background: #f9fafb;
+}
+
+.loadingContainer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #6b7280;
+}
+
+/* Header Bar (with Logout) */
+.headerBar {
+  padding: 12px 20px;
+  background: #1f2937;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  font-size: 14px;
+}
+
+.logoutButton {
+  padding: 8px 16px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Main Container */
+.mainContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Add Button */
+.addButton {
+  padding: 10px 20px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Search Bar */
+.searchBar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  align-items: center;
+}
+
+.searchBar input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.searchBar input::placeholder {
+  color: #9ca3af;
+}
+
+.refreshButton {
+  padding: 8px 16px;
+  background: #6b7280;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Loading Box */
+.loadingBox {
+  text-align: center;
+  padding: 40px;
+  background: white;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #6b7280;
+}
+
+/* Table */
+.tableContainer {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  padding: 16px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 14px;
+  background: #f3f4f6;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.table td {
+  padding: 16px;
+  font-size: 14px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.badge {
+  padding: 4px 12px;
+  background: #e0e7ff;
+  color: #3730a3;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  align-items: center; 
+}
+.actionButtons {
+  justify-content: flex-start; 
+}
+
+.actionButtons button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.viewButton { background: #3b82f6; color: white; }
+.editButton  { background: #10b981; color: white; }
+.deleteButton { background: #ef4444; color: white; }
+
+/* Empty State */
+.emptyState {
+  text-align: center;
+  padding: 60px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.emptyState > div:first-child {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.emptyTitle {
+  font-size: 18px;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.emptySubtitle {
+  font-size: 14px;
+  color: #9ca3af;
+  margin-top: 8px;
+}
+
+/* Modal */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modalContent {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  min-width: 450px;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+}
+
+.modalContent h2 {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.formGroup {
+  margin-bottom: 16px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.formGroup input,
+.formGroup select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.totalBox {
+  padding: 16px;
+  background: #eff6ff;
+  border-radius: 8px;
+  border: 1px solid #bfdbfe;
+  margin-bottom: 20px;
+}
+
+.totalBox label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #1e40af;
+}
+
+.totalValue {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e40af;
+}
+
+.totalDesc {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+/* Detail Modal */
+.detailGroup {
+  margin-bottom: 16px;
+}
+
+.detailGroup label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.detailValue {
+  padding: 12px;
+  background: #f9fafb;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.detailNumber {
+  padding: 12px;
+  background: #f9fafb;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+/* Modal Footer */
+.modalFooter {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  padding-top: 12px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.cancelButton,
+.submitButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.cancelButton {
+  background: #6b7280;
+  color: white;
+}
+
+.submitButton {
+  background: #2563eb;
+  color: white;
+}
